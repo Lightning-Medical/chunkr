@@ -5,6 +5,59 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.10.0](https://github.com/Lightning-Medical/chunkr/compare/v1.9.0...v1.10.0) (2026-07-08)
+
+
+### Features
+
+* /health return current version ([627e8c9](https://github.com/Lightning-Medical/chunkr/commit/627e8c9a1160bf4a360f6d0ea0f1376f64344642))
+* Added automation of docker build ([#365](https://github.com/Lightning-Medical/chunkr/issues/365)) ([f01cb2f](https://github.com/Lightning-Medical/chunkr/commit/f01cb2fc66c104066f1188149cdbbb8390337169))
+* Added doctr small dockers ([#407](https://github.com/Lightning-Medical/chunkr/issues/407)) ([9b8a56e](https://github.com/Lightning-Medical/chunkr/commit/9b8a56e273f39aa15d3001c6f7ccb707900dd584))
+* Added new cropped image viewing, updated upload component defaults for image VLM processing, and some bug fixes for segment highlighting + JSON viewing ([#388](https://github.com/Lightning-Medical/chunkr/issues/388)) ([6115ee0](https://github.com/Lightning-Medical/chunkr/commit/6115ee08b785e94ed8432e4c75da98e32a42bea9))
+* Added release please for automated releases ([#363](https://github.com/Lightning-Medical/chunkr/issues/363)) ([d808d4e](https://github.com/Lightning-Medical/chunkr/commit/d808d4e72464b83590dfab73fe973e2f98b4f7e7))
+* Chunking can now be configured using `embed_sources` in `segment_processing.{segment_type}` configuration and allows the choice of pre-configured tokenizers or any huggingface tokenizer by setting the `tokenizer` field in `chunk_processing` ([#420](https://github.com/Lightning-Medical/chunkr/issues/420)) ([d88ac64](https://github.com/Lightning-Medical/chunkr/commit/d88ac646ece3935f1c7fcd028bb6c5df0b7d00d3))
+* **core:** Added compatibility to Google AI Studio ([#380](https://github.com/Lightning-Medical/chunkr/issues/380)) ([f56b74c](https://github.com/Lightning-Medical/chunkr/commit/f56b74c23d1bb0faf050c54a74437139dc9a6938))
+* **core:** Improved image uploads to pdf conversion and added checkbox support ([a2b65ed](https://github.com/Lightning-Medical/chunkr/commit/a2b65ed182dcc07af1bccc5b4e98dec3a3335ed8))
+* **core:** Remove rrq dependency and improve memory management ([92b70dc](https://github.com/Lightning-Medical/chunkr/commit/92b70dceb1188cec926e415ff295127a3fb085cc))
+* New picture prompts ([#405](https://github.com/Lightning-Medical/chunkr/issues/405)) ([d161fa0](https://github.com/Lightning-Medical/chunkr/commit/d161fa0820fc03ffaf9bdbbf58c124179548a31a))
+
+
+### Bug Fixes
+
+* Added back segmentation docker with self hosted runner ([0984ba2](https://github.com/Lightning-Medical/chunkr/commit/0984ba2710fca19a807985e5a92fbf1e185bbb03))
+* Added imagemagick to docker images ([d3ac921](https://github.com/Lightning-Medical/chunkr/commit/d3ac9215f0c570269ba16f3855512da606fd3d4c))
+* Added retry when finish reason is length ([#383](https://github.com/Lightning-Medical/chunkr/issues/383)) ([a8dd777](https://github.com/Lightning-Medical/chunkr/commit/a8dd77791d7294e7166a430776a329e53b0a8103))
+* Await was missing in response ([1ad37d8](https://github.com/Lightning-Medical/chunkr/commit/1ad37d851ee0379c13ba663fc8bafb3541e409a2))
+* Await was missing in response ([632adce](https://github.com/Lightning-Medical/chunkr/commit/632adce42c7850a788e0e46817e2498724c76890))
+* **client:** Polling would error out on httpx.ReadTimeout ([#400](https://github.com/Lightning-Medical/chunkr/issues/400)) ([aea1255](https://github.com/Lightning-Medical/chunkr/commit/aea125533063de8bbddb36741aed5c1c07ba693b))
+* Continue on error on docker build ([aca0b44](https://github.com/Lightning-Medical/chunkr/commit/aca0b4444875a1b053924a60380e6ee44a4dc005))
+* **core:** Allow PDFs based on extension if the pages can be counted ([#396](https://github.com/Lightning-Medical/chunkr/issues/396)) ([cfbfd01](https://github.com/Lightning-Medical/chunkr/commit/cfbfd0155f5fcfb6245acc7dbedb1baa0b12df0b))
+* **core:** Auto-fix clippy warnings ([#386](https://github.com/Lightning-Medical/chunkr/issues/386)) ([ccb56f9](https://github.com/Lightning-Medical/chunkr/commit/ccb56f95212e5840d931893929c6dec648123e34))
+* **core:** Auto-fix clippy warnings ([#393](https://github.com/Lightning-Medical/chunkr/issues/393)) ([0605227](https://github.com/Lightning-Medical/chunkr/commit/06052278229f0fe1c6feec44172e9048bf09ecc1))
+* **core:** Handle null started_at values with COALESCE in timeout job ([d068be8](https://github.com/Lightning-Medical/chunkr/commit/d068be82b972a6cd830234448e4bbfe5ebb5245a))
+* **core:** Update default generation strategies for Picture and Page segments ([5316485](https://github.com/Lightning-Medical/chunkr/commit/5316485aeec2f923f6fb24f9ab1fcab18e275299))
+* Correct Rust lint workflow configuration ([0b1a1eb](https://github.com/Lightning-Medical/chunkr/commit/0b1a1ebdf42a2c22ddfcff52fb7356ebb4216287))
+* Debugging please release ([e574177](https://github.com/Lightning-Medical/chunkr/commit/e574177cc28c68e86ab08ac5b83328b393b02bf4))
+* Debugging please release with core changes ([558a6f9](https://github.com/Lightning-Medical/chunkr/commit/558a6f9fd86c5d6e53b770dd48909a3a60e7f110))
+* Docker builds use root version ([82e1768](https://github.com/Lightning-Medical/chunkr/commit/82e176868e215f550377d9aed91e5b37fd57faba))
+* Docker compose files update separately ([15328a2](https://github.com/Lightning-Medical/chunkr/commit/15328a23dfd4399b6a56babb18becd04bf7bdf72))
+* Docker compose updated uses pr ([f45abd1](https://github.com/Lightning-Medical/chunkr/commit/f45abd130d4c643c288c3492bb27f6736059dfbf))
+* Downgraded cuda version for doctr ([36db353](https://github.com/Lightning-Medical/chunkr/commit/36db353079aaf56fd4613ea13b3c88e7d678e897))
+* Fix keycloak tag ([df9efa5](https://github.com/Lightning-Medical/chunkr/commit/df9efa5e212a517020e47d66c3820e62ca87acf2))
+* Fixed prompts and retries for LLMs ([#394](https://github.com/Lightning-Medical/chunkr/issues/394)) ([4b31588](https://github.com/Lightning-Medical/chunkr/commit/4b3158889747214abc00ee35c634659491e1c07d))
+* Fixed timeout query ([97950e5](https://github.com/Lightning-Medical/chunkr/commit/97950e54aaa9c10cc5ce42f75600603c27d73168))
+* Github action now removes v from version before tagging ([6c77a1f](https://github.com/Lightning-Medical/chunkr/commit/6c77a1f5f435c362ec62aabb8bd29a78cc7eba1e))
+* Image tag updates not full image ([7b8791f](https://github.com/Lightning-Medical/chunkr/commit/7b8791f6bdee1e2b5f47496936700de4ddaee537))
+* Moved infrastructure from values.yaml to infrastructure.yaml ([e4ba284](https://github.com/Lightning-Medical/chunkr/commit/e4ba284b85c3290f585abce36d97c8c9860bdb9a))
+* Only trigger docker build after releases created ([676c280](https://github.com/Lightning-Medical/chunkr/commit/676c280e975ea37a8a737876854b0e3aa7006fc2))
+* Release-please docker build ([6e1ff43](https://github.com/Lightning-Medical/chunkr/commit/6e1ff43ad0d5780d2f4a6e67b0b2bcc47d8964f6))
+* Removed segmenetation from docker build ([5dc9e6e](https://github.com/Lightning-Medical/chunkr/commit/5dc9e6e5d1687bbe6ab3555f7df5656856a43f34))
+* Rmeoved changelog from core ([b658a63](https://github.com/Lightning-Medical/chunkr/commit/b658a6373baee8cba156d7272a8c91accda0e0e8))
+* Rmeoved changelog from core ([4f7c9c0](https://github.com/Lightning-Medical/chunkr/commit/4f7c9c0595199ae176c883f230713514b889d9a5))
+* Updated changelog paths ([d20b811](https://github.com/Lightning-Medical/chunkr/commit/d20b8112fc5043f5eecabf1e72e89412b1b5e7b1))
+* Updated hashmap to lru for caching ([d868c76](https://github.com/Lightning-Medical/chunkr/commit/d868c76dd16a6751e3baab43190b81e827e26395))
+* Updated rust version for docker builds ([e5a3633](https://github.com/Lightning-Medical/chunkr/commit/e5a3633e970dacae3ce08e42f5d7249aed592fa6))
+
 ## [1.9.0](https://github.com/lumina-ai-inc/chunkr/compare/v1.8.2...v1.9.0) (2025-03-28)
 
 

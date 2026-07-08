@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.7.0](https://github.com/Lightning-Medical/chunkr/compare/chunkr-core-v1.6.0...chunkr-core-v1.7.0) (2026-07-08)
+
+
+### Features
+
+* Added doctr small dockers ([#407](https://github.com/Lightning-Medical/chunkr/issues/407)) ([9b8a56e](https://github.com/Lightning-Medical/chunkr/commit/9b8a56e273f39aa15d3001c6f7ccb707900dd584))
+* Added release please for automated releases ([#363](https://github.com/Lightning-Medical/chunkr/issues/363)) ([d808d4e](https://github.com/Lightning-Medical/chunkr/commit/d808d4e72464b83590dfab73fe973e2f98b4f7e7))
+* Chunking can now be configured using `embed_sources` in `segment_processing.{segment_type}` configuration and allows the choice of pre-configured tokenizers or any huggingface tokenizer by setting the `tokenizer` field in `chunk_processing` ([#420](https://github.com/Lightning-Medical/chunkr/issues/420)) ([d88ac64](https://github.com/Lightning-Medical/chunkr/commit/d88ac646ece3935f1c7fcd028bb6c5df0b7d00d3))
+* **core:** Added compatibility to Google AI Studio ([#380](https://github.com/Lightning-Medical/chunkr/issues/380)) ([f56b74c](https://github.com/Lightning-Medical/chunkr/commit/f56b74c23d1bb0faf050c54a74437139dc9a6938))
+* **core:** Improved image uploads to pdf conversion and added checkbox support ([a2b65ed](https://github.com/Lightning-Medical/chunkr/commit/a2b65ed182dcc07af1bccc5b4e98dec3a3335ed8))
+* **core:** Remove rrq dependency and improve memory management ([92b70dc](https://github.com/Lightning-Medical/chunkr/commit/92b70dceb1188cec926e415ff295127a3fb085cc))
+* New picture prompts ([#405](https://github.com/Lightning-Medical/chunkr/issues/405)) ([d161fa0](https://github.com/Lightning-Medical/chunkr/commit/d161fa0820fc03ffaf9bdbbf58c124179548a31a))
+
+
+### Bug Fixes
+
+* Added retry when finish reason is length ([#383](https://github.com/Lightning-Medical/chunkr/issues/383)) ([a8dd777](https://github.com/Lightning-Medical/chunkr/commit/a8dd77791d7294e7166a430776a329e53b0a8103))
+* **core:** Allow PDFs based on extension if the pages can be counted ([#396](https://github.com/Lightning-Medical/chunkr/issues/396)) ([cfbfd01](https://github.com/Lightning-Medical/chunkr/commit/cfbfd0155f5fcfb6245acc7dbedb1baa0b12df0b))
+* **core:** Auto-fix clippy warnings ([#386](https://github.com/Lightning-Medical/chunkr/issues/386)) ([ccb56f9](https://github.com/Lightning-Medical/chunkr/commit/ccb56f95212e5840d931893929c6dec648123e34))
+* **core:** Auto-fix clippy warnings ([#393](https://github.com/Lightning-Medical/chunkr/issues/393)) ([0605227](https://github.com/Lightning-Medical/chunkr/commit/06052278229f0fe1c6feec44172e9048bf09ecc1))
+* **core:** Handle null started_at values with COALESCE in timeout job ([d068be8](https://github.com/Lightning-Medical/chunkr/commit/d068be82b972a6cd830234448e4bbfe5ebb5245a))
+* **core:** Update default generation strategies for Picture and Page segments ([5316485](https://github.com/Lightning-Medical/chunkr/commit/5316485aeec2f923f6fb24f9ab1fcab18e275299))
+* Debugging please release with core changes ([558a6f9](https://github.com/Lightning-Medical/chunkr/commit/558a6f9fd86c5d6e53b770dd48909a3a60e7f110))
+* Fixed prompts and retries for LLMs ([#394](https://github.com/Lightning-Medical/chunkr/issues/394)) ([4b31588](https://github.com/Lightning-Medical/chunkr/commit/4b3158889747214abc00ee35c634659491e1c07d))
+* Fixed timeout query ([97950e5](https://github.com/Lightning-Medical/chunkr/commit/97950e54aaa9c10cc5ce42f75600603c27d73168))
+* Rmeoved changelog from core ([b658a63](https://github.com/Lightning-Medical/chunkr/commit/b658a6373baee8cba156d7272a8c91accda0e0e8))
+* Updated hashmap to lru for caching ([d868c76](https://github.com/Lightning-Medical/chunkr/commit/d868c76dd16a6751e3baab43190b81e827e26395))
+
 ## [1.6.0](https://github.com/lumina-ai-inc/chunkr/compare/chunkr-core-v1.5.2...chunkr-core-v1.6.0) (2025-03-28)
 
 

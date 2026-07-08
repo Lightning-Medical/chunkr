@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/Lightning-Medical/chunkr/compare/chunkr-services-v0.1.1...chunkr-services-v0.1.2) (2026-07-08)
+
+
+### Features
+
+* Added doctr small dockers ([#407](https://github.com/Lightning-Medical/chunkr/issues/407)) ([9b8a56e](https://github.com/Lightning-Medical/chunkr/commit/9b8a56e273f39aa15d3001c6f7ccb707900dd584))
+* **core:** Improved image uploads to pdf conversion and added checkbox support ([a2b65ed](https://github.com/Lightning-Medical/chunkr/commit/a2b65ed182dcc07af1bccc5b4e98dec3a3335ed8))
+
 ## [0.1.1](https://github.com/lumina-ai-inc/chunkr/compare/chunkr-services-v0.1.0...chunkr-services-v0.1.1) (2025-03-27)
 
 
