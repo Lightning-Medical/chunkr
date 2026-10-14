@@ -91,7 +91,7 @@ importers:
         version: 1.22.0(@types/react@18.3.18)(react@18.3.1)
       autoprefixer:
         specifier: ^10.4.20
-        version: 10.4.20(postcss@8.5.1)
+        version: 10.4.20(postcss@8.5.26)
       axios:
         specifier: ^1.20.0
         version: 1.20.0(debug@4.4.0(supports-color@7.2.0))(supports-color@7.2.0)
@@ -114,8 +114,8 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0
       katex:
-        specifier: ^0.16.19
-        version: 0.16.21
+        specifier: ^0.18.2
+        version: 0.18.10
       keycloak-js:
         specifier: ^25.0.4
         version: 25.0.6
@@ -2230,6 +2230,10 @@ packages:
   comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
 
+  commander@15.0.0:
+    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+    engines: {node: '>=22.12.0'}
+
   commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
     engines: {node: '>= 6'}
@@ -2976,6 +2980,10 @@ packages:
 
   katex@0.16.21:
     resolution: {integrity: sha512-XvqR7FgOHtWupfMiigNzmh+MgUVmDGU2kXZm899ZkPfcuoPuFxyHmXsgATDpFZDAXCI8tvinaVcDo8PIIJSo4A==}
+    hasBin: true
+
+  katex@0.18.10:
+    resolution: {integrity: sha512-/B6p9eY9DX7aHBfpkHdpirDTZ5QH9xTwL9y837PWuzuv41O5jFdqNQwVQEQsimY0/iVNkwBY4+4hMfhQ7d4Dbw==}
     hasBin: true
 
   keycloak-js@25.0.6:
@@ -6268,14 +6276,14 @@ snapshots:
 
   attr-accept@2.2.5: {}
 
-  autoprefixer@10.4.20(postcss@8.5.1):
+  autoprefixer@10.4.20(postcss@8.5.26):
     dependencies:
       browserslist: 4.24.4
       caniuse-lite: 1.0.30001695
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.1.1
-      postcss: 8.5.1
+      postcss: 8.5.26
       postcss-value-parser: 4.2.0
 
   axios@1.20.0(debug@4.4.0(supports-color@7.2.0))(supports-color@7.2.0):
@@ -6437,6 +6445,8 @@ snapshots:
       delayed-stream: 1.0.0
 
   comma-separated-tokens@2.0.3: {}
+
+  commander@15.0.0: {}
 
   commander@4.1.1: {}
 
@@ -7225,6 +7235,10 @@ snapshots:
   katex@0.16.21:
     dependencies:
       commander: 8.3.0
+
+  katex@0.18.10:
+    dependencies:
+      commander: 15.0.0
 
   keycloak-js@25.0.6:
     dependencies:
